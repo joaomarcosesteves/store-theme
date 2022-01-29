@@ -1,11 +1,11 @@
 {
   "store.home": {
     "blocks": [
+      "countdown",
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
+      "__fold__.mobile",
       "flex-layout.row#deals",
+      "__fold__.desktop",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
@@ -13,6 +13,10 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
   },
 
   "list-context.image-list#demo": {
@@ -68,7 +72,7 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass": "shelf"
     }
   },
